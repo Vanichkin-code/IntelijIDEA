@@ -49,5 +49,5 @@ public void loginTest() {
     loginPage.clickLoginBtn();
 }
 
-
-сделаем нужное изменение
+сегодня пятница)
+нужное изменение!
