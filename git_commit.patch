@@ -1,0 +1,403 @@
+Subject: [PATCH] git commit
+---
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
++++ b/.gitignore	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
+@@ -0,0 +1,38 @@
++target/
++!.mvn/wrapper/maven-wrapper.jar
++!**/src/main/**/target/
++!**/src/test/**/target/
++
++### IntelliJ IDEA ###
++.idea/modules.xml
++.idea/jarRepositories.xml
++.idea/compiler.xml
++.idea/libraries/
++*.iws
++*.iml
++*.ipr
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++build/
++!**/src/main/**/build/
++!**/src/test/**/build/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
++++ b/.idea/.gitignore	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
++++ b/.idea/encodings.xml	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
++++ b/.idea/misc.xml	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="23" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
++++ b/.idea/vcs.xml	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+new file mode 100644
+--- /dev/null	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
++++ b/pom.xml	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
+@@ -0,0 +1,33 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>org.example</groupId>
++    <artifactId>untitled1</artifactId>
++    <version>1.0-SNAPSHOT</version>
++
++    <properties>
++        <maven.compiler.source>23</maven.compiler.source>
++        <maven.compiler.target>23</maven.compiler.target>
++        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
++    </properties>
++
++    <dependencies>
++        <!-- Selenium -->
++        <dependency>
++            <groupId>org.seleniumhq.selenium</groupId>
++            <artifactId>selenium-java</artifactId>
++            <version>4.28.0</version>
++        </dependency>
++
++        <!-- JUnit -->
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>4.12</version>
++            <scope>test</scope>
++        </dependency>
++    </dependencies>
++</project>
+\ No newline at end of file
+Index: src/main/java/org/example/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/example/Main.java b/src/main/java/org/example/Main.java
+new file mode 100644
+--- /dev/null	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
++++ b/src/main/java/org/example/Main.java	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
+@@ -0,0 +1,29 @@
++import io.opentelemetry.sdk.autoconfigure.spi.ConfigProperties;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.chrome.ChromeDriver;
++import org.openqa.selenium.support.FindBy;
++
++import java.util.concurrent.TimeUnit;
++
++
++
++public class Main {
++public static void main(String[] args) {
++   //определение пути до драйвера и его настройка
++   System.setProperty("webdriver.chrome.driver","C:\\Users\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
++   //создание экземпляра драйвера
++   WebDriver driver=new ChromeDriver();
++   //окно разворачивается на полный экран
++   driver.manage().window().maximize();
++   //задержка на выполнение теста = 10 сек.
++   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
++   //переход на желаемый сайт
++   driver.get("https://mail.ru/");
++    }
++}
++
++
++
++
+Index: src/test/java/org/example/LoginPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/org/example/LoginPage.java b/src/test/java/org/example/LoginPage.java
+new file mode 100644
+--- /dev/null	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
++++ b/src/test/java/org/example/LoginPage.java	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
+@@ -0,0 +1,55 @@
++package org.example;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.support.FindBy;
++import org.openqa.selenium.support.PageFactory;
++import org.w3c.dom.html.HTMLInputElement;
++
++public class LoginPage {
++    /**
++ * конструктор класса, занимающийся инициализацией полей класса
++ */
++    public WebDriver driver;
++    public LoginPage(WebDriver driver) {
++        PageFactory.initElements(driver, this);
++        this.driver = driver;}
++
++/**
++ * определение локатора кнопки "войти"
++ */
++@FindBy(xpath = "//button[text()='Войти'])
++private WebElement loginBtn;
++
++/**
++ * метод для осуществления нажатия кнопки "войти" после загрузки страницы
++ */
++    public void clickLoginBtn() {loginBtn.click();}
++
++/**
++ * определение локатора поля ввода логина
++ */
++@FindBy(xpath = "//*[@id="root"]/div/div/div/div[2]/div/form/div[2]/div[2]/div[1]/div/div/div/div/div/div[1]/div/input")
++private WebElement loginField;
++
++/**
++* метод для ввода логина
++*/
++public void inputLogin(String login) {
++loginField.sendKeys(login); }
++
++/**
++ * определение локатора кнопки "войти как User"
++ */
++@FindBy(xpath = "//*[@id="root"]/div/div/div/div[2]/div/form/div[2]/div[2]/div[3]/div/div/div[1]/button")
++private WebElement loginBtn;
++
++/**
++* метод для осуществления нажатия кнопки "войти как User" после ввода логина
++*/
++public void clickLoginBtn() {
++loginBtn.click(); } }
++
++
++
++
++
+Index: src/test/java/org/example/LoginTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/org/example/LoginTest.java b/src/test/java/org/example/LoginTest.java
+new file mode 100644
+--- /dev/null	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
++++ b/src/test/java/org/example/LoginTest.java	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
+@@ -0,0 +1,52 @@
++import io.opentelemetry.sdk.autoconfigure.spi.ConfigProperties;
++import org.junit.Test;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.chrome.ChromeDriver;
++import org.openqa.selenium.support.FindBy;
++
++import java.util.concurrent.TimeUnit;
++
++
++
++public class Main {
++    public static void main(String[] args) {
++        //определение пути до драйвера и его настройка
++        System.setProperty("webdriver.chrome.driver","C:\\Users\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
++        //создание экземпляра драйвера
++        WebDriver driver=new ChromeDriver();
++        //окно разворачивается на полный экран
++        driver.manage().window().maximize();
++        //задержка на выполнение теста = 10 сек.
++        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
++        //переход на желаемый сайт
++        driver.get("https://mail.ru");
++    }
++}
++/**
++ * тестовый метод для осуществления аутентификации
++ */
++@Test
++public void loginTest() {
++    //получение доступа к методам класса LoginPage для взаимодействия с элементами страницы
++    //значение login берется из файла настроек по аналогии с chromedriver
++    //и loginpage
++
++    //нажимаем на кнопку войти
++    loginPage.clickLoginBtn();
++
++    //вводим логин
++    loginPage.inputLogin(ConfProperties.getProperty("login"));
++
++    //получаем отображаемый логин
++    String user = profilePage.getUserName();
++
++    //и сравниваем его с логином из файла настроек
++    Assert.assertEquals(ConfProperties.getProperty("login"), user);
++
++    //нажимаем кнопку войти как User
++    loginPage.clickLoginBtn();
++}
++
++
+Index: src/test/java/org/example/ProfilePage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/org/example/ProfilePage.java b/src/test/java/org/example/ProfilePage.java
+new file mode 100644
+--- /dev/null	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
++++ b/src/test/java/org/example/ProfilePage.java	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
+@@ -0,0 +1,13 @@
++package org.example;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.support.FindBy;
++import org.openqa.selenium.support.PageFactory;
++public class ProfilePage {
++    /**
++     * конструктор класса, занимающийся инициализацией полей класса
++     */
++    public WebDriver driver;
++    public ProfilePage(WebDriver driver) {
++        PageFactory.initElements(driver, this);
++        this.driver = driver; }}
+\ No newline at end of file
+Index: src/test/java/resources/conf.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/src/test/java/resources/conf.properties b/src/test/java/resources/conf.properties
+new file mode 100644
+--- /dev/null	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
++++ b/src/test/java/resources/conf.properties	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
+@@ -0,0 +1,2 @@
++#chromedriver = /Users/ChromeDriver/chromedriver-win64/chromedriver.exe
++loginpage = https://mail.ru/
+\ No newline at end of file
+Index: untitled1.eml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/untitled1.eml b/untitled1.eml
+new file mode 100644
+--- /dev/null	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
++++ b/untitled1.eml	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<component LANGUAGE_LEVEL="JDK_23" inheritJdk="true">
++	<output-test url="file://$MODULE_DIR$/target/test-classes"/>
++	<contentEntry url="file://$MODULE_DIR$">
++		<testFolder url="file://$MODULE_DIR$/src/test/java"/>
++		<testFolder url="file://$MODULE_DIR$/src/test/resources"/>
++		<excludeFolder url="file://$MODULE_DIR$/target"/>
++	</contentEntry>
++</component>
+Index: untitled1.userlibraries
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/untitled1.userlibraries b/untitled1.userlibraries
+new file mode 100644
+--- /dev/null	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
++++ b/untitled1.userlibraries	(revision 639d5edd757df8fdf8b672e09b9fe39179321531)
+@@ -0,0 +1,3 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<eclipse-userlibraries />
++

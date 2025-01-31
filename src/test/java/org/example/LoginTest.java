@@ -49,5 +49,4 @@ public void loginTest() {
     loginPage.clickLoginBtn();
 }
 
-еще раз отменил
-
+сегодня пятница)
