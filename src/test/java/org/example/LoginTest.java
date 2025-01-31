@@ -49,4 +49,4 @@ public void loginTest() {
     loginPage.clickLoginBtn();
 }
 
-внес изменения
+отменил изменеия
